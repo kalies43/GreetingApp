@@ -2,7 +2,4 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="muddy_black">#1A1A1A</color>
-    <color name="spiderman_red">#A11B1B</color>
-    <color name="hint_gray">#BDBDBD</color>
 </resources>

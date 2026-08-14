@@ -2,64 +2,62 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/app_background"
-    android:gravity="center"
     android:orientation="vertical"
-    android:padding="24dp">
+    android:padding="24dp"
+    android:gravity="center">
 
     <TextView
         android:id="@+id/tvLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:text="Enter your name:"
-        android:textColor="@color/white"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp" />
 
     <EditText
         android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/white"
         android:hint="Your name here"
-        android:textColor="@color/white"
-        android:textColorHint="@color/hint_gray" />
+        android:layout_marginBottom="16dp" />
 
     <Button
         android:id="@+id/btnGreet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Greet Me"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/spiderman_red"
-        android:text="Greet me"
-        android:textColor="@color/white" />
+
+        android:backgroundTint="@color/material_dynamic_neutral60"/>
+
 
     <ImageView
-        android:id="@+id/spidermanIcon"
-        android:layout_width="119dp"
-        android:layout_height="109dp"
+        android:id="@+id/emailIcon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/email"
+        android:visibility="gone"/>
 
-        android:src="@drawable/spidey"
-        android:visibility="gone" />
 
     <TextView
         android:id="@+id/tvGreeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
-        android:textColor="@color/white"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+
+        android:textColor="@color/material_dynamic_neutral60"/>
 
     <Button
         android:id="@+id/btnReset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/spiderman_red"
         android:text="Reset"
-        android:textColor="@color/white"
-        android:visibility="gone" />
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/material_dynamic_primary0"
+        android:visibility="gone"/>
+
+
 
 </LinearLayout>

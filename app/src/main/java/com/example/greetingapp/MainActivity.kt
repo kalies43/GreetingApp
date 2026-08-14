@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val tvGreeting = findViewById<TextView>(R.id.tvGreeting)
 
         // challenge #2 ImageView
-        val ivSpidermanIcon = findViewById<ImageView>(R.id.spidermanIcon)
+        val ivEmailIcon = findViewById<ImageView>(R.id.emailIcon)
 
         // challenge #4
         val btnReset = findViewById<Button>(R.id.btnReset)
@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Greeting sent!", Toast.LENGTH_SHORT).show()
 
                 // Challenge #2
-                ivSpidermanIcon.visibility = View.VISIBLE
+                ivEmailIcon.visibility = View.VISIBLE
 
                 // Challenge # 4
                 btnReset.visibility = View.VISIBLE
@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity() {
         btnReset.setOnClickListener {
             etName.setText("")
             tvGreeting.text = ""
-            ivSpidermanIcon.visibility = View.GONE
+            ivEmailIcon.visibility = View.GONE
             btnReset.visibility = View.GONE
         }
 
